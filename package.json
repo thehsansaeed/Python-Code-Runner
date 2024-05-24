@@ -1,8 +1,8 @@
 {
   "name": "pythoncoderunner",
-  "displayName": "PythonCodeRunner",
-  "description": "PythonCodeRunner is a Visual Studio Code extension designed to run Python scripts directly from the editor. It adds commands to run Python files from the Explorer context menu and the editor, with support for both local files and files opened in the editor. The extension provides a convenient way to execute Python scripts and integrates a status bar button for quick access.",
-  "version": "0.0.1",
+  "displayName": "Python Code Runner",
+  "description": "Python Code Runner is a Visual Studio Code extension designed to run Python scripts directly from the editor",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.88.0"
   },
@@ -59,7 +59,7 @@
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/vscode": "^1.89.0",
+    "@types/vscode": "^1.88.0",
     "@types/mocha": "^10.0.6",
     "@types/node": "18.x",
     "@typescript-eslint/eslint-plugin": "^7.7.1",
@@ -69,7 +69,8 @@
     "@vscode/test-cli": "^0.0.9",
     "@vscode/test-electron": "^2.3.9"
   },
-  "publisher": "Ahsan Saeed",
+  "publisher": "ahsansaeed",
+  "publisherDisplayName": "Ahsan Saeed",
   "repository": {
     "type": "git",
     "url": "https://github.com/thehsansaeed/Python-Code-Runner"

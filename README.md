@@ -1,71 +1,77 @@
-# python-code-runner README
+# Run Python File Extension
 
-This is the README for your extension "python-code-runner". After writing up a brief description, we recommend including the following sections.
+This Visual Studio Code extension allows you to easily run Python scripts directly from the editor or the file explorer.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- Run the active Python file from the editor.
+- Run a Python file from the context menu in the file explorer.
+- Adds a convenient button to the status bar to run the active Python file.
 
-For example if there is an image subfolder under your extension project workspace:
+## Installation
 
-\!\[feature X\]\(images/feature-x.png\)
+1. Open Visual Studio Code.
+2. Go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window or by pressing `Ctrl+Shift+X`.
+3. Search for `Run Python File` and click Install.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## Usage
 
-## Requirements
+### From the Editor
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+1. Open a Python file in the editor.
+2. Click on the `$(play)` button in the status bar to run the active Python file.
+3. Alternatively, you can right-click in the editor and select `Run Python File` from the context menu.
 
-## Extension Settings
+### From the File Explorer
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+1. Right-click on a Python file in the file explorer.
+2. Select `Run Python File` from the context menu.
 
-For example:
+### Commands
 
-This extension contributes the following settings:
+-`extension.runPythonFile`: Runs the active Python file or the selected Python file from the file explorer.
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+## Development
 
-## Known Issues
+If you want to contribute or modify this extension, follow these steps:
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+1. Clone the repository.
+2. Open the repository folder in Visual Studio Code.
+3. Run `npm install` to install the necessary dependencies.
+4. Press `F5` to open a new VS Code window with the extension loaded.
+
+### Adding a Command
+
+To add a new command, follow these steps:
+
+1. Open `src/extension.ts`.
+2. Register your command using `vscode.commands.registerCommand`.
+3. Implement the functionality for your command.
+
+### Publishing the Extension
+
+To publish the extension to the Visual Studio Code Marketplace:
+
+1. Install `vsce` if you haven't already: `npm install -g vsce`.
+2. Run `vsce package` to create a `.vsix` file.
+3. Run `vsce publish` to publish the extension (you will need a Personal Access Token from the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/manage)).
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
-
 ### 1.0.0
 
-Initial release of ...
+- Initial release of the Run Python File extension.
 
-### 1.0.1
+## License
 
-Fixed issue #.
+[MIT License](https://github.com/thehsansaeed/Python-Code-Runner/blob/main/LICENSE "Ahsan Saeed").
 
-### 1.1.0
+## Support
 
-Added features X, Y, and Z.
+If you have any issues or feature requests, please open an issue on the [GitHub repository](https://github.com/thehsansaeed/Python-Code-Runner/issues "Ahsan Saeed").
 
----
+## Developer Details
 
-## Following extension guidelines
+-**Ahsan Saeed** - [GitHub Profile](https://github.com/thehsansaeed/)
 
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+-**Email** - [muhammadahsen83@gmail.com](muhammadahsen83@gmail.com)
